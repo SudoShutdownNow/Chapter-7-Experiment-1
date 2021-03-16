@@ -42,7 +42,7 @@ vector<int> primeSeperate(int x)//分解质因数并以向量形式返回，这个程序里用不到
 	return res;
 }
 
-bool isGoodNum(int x)
+bool isGoodNum(int x)//根据分解的结果判断是否为完数
 {
 	vector<int> seperateRes = seperate(x);
 	int sum = 0;
@@ -61,7 +61,7 @@ bool isGoodNum(int x)
 	}
 }
 
-vector<int> getGoodNum(int x)
+vector<int> getGoodNum(int x)//列举一定范围内的完数
 {
 	vector<int> res;
 	for (int i = 2; i <= x; i++)
